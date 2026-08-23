@@ -18,6 +18,16 @@
       <a href="{{ '/privacy/' | relative_url }}">プライバシーポリシー</a>
       <a href="{{ '/contact/' | relative_url }}">お問い合わせ</a>
     </nav>
+    <p class="copyright site-last-updated">最終更新日：<time id="site-last-updated">{{ site.time | date: "%Y年%-m月%-d日" }}</time></p>
     <p class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    <script>
+      (function () {
+        var el = document.getElementById('site-last-updated');
+        if (!el) return;
+        var d = new Date();
+        el.dateTime = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+        el.textContent = d.getFullYear() + '年' + (d.getMonth() + 1) + '月' + d.getDate() + '日';
+      })();
+    </script>
   </div>
 </footer>
