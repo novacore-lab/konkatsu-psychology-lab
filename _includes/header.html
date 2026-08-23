@@ -7,7 +7,7 @@
     <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <p class="site-tagline">{{ site.description }}</p>
+    <p class="site-tagline">{{ site.description }}<span class="site-updated-badge">最終更新：<time class="js-last-updated">{{ site.time | date: "%Y年%-m月%-d日" }}</time></span></p>
     <nav class="site-nav" aria-label="サイト内ナビゲーション">
       <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>トップ</a>
       <a href="{{ '/category/matching-app/' | relative_url }}"{% if page.url contains '/category/matching-app/' %} class="active"{% endif %}>マッチングアプリ</a>
