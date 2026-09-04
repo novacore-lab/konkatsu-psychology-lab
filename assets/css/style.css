@@ -1033,3 +1033,121 @@ body.has-floating-shindan .back-to-top { bottom: 90px; }
   .aff-cta-mini .aff-cta-mini-btn { width: 100%; }
   .post-shindan-cta .psc-link { white-space: normal; }
 }
+
+/* ================================================================
+   Light theme refresh (2026/08/23)
+   全体をライト基調（白×ゴールド）に刷新。紺は文字色・アクセントとして残す
+   ================================================================ */
+
+:root {
+  --gold-600: #a17c15; /* 白背景でも読めるダークゴールド */
+  --cream-50: #fdfbf5;
+  --cream-100: #f3ecdd;
+}
+
+/* --- Header: white frosted --- */
+.site-header {
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+}
+.site-header.is-scrolled { box-shadow: 0 8px 24px rgba(10, 17, 32, 0.1); }
+.site-title { color: var(--navy-900); }
+.site-tagline { color: var(--color-sub); }
+.site-updated-badge {
+  color: var(--navy-700);
+  border-color: rgba(201, 162, 39, 0.55);
+  background: var(--gold-tint);
+}
+.site-updated-badge time { color: var(--gold-600); }
+.nav-toggle { border-color: rgba(201, 162, 39, 0.5); background: #fff; }
+.nav-toggle span { background: var(--gold-500); }
+.site-nav a { color: var(--navy-700); }
+.site-nav a:hover { color: var(--navy-900); background: rgba(201, 162, 39, 0.16); }
+.site-nav a.active { color: var(--navy-900); background: var(--gold-400); }
+.site-nav a.nav-cta.active { background: var(--navy-900); color: var(--gold-300); }
+
+/* --- Homepage hero: light --- */
+.hero {
+  background: linear-gradient(160deg, var(--cream-50) 0%, var(--cream-100) 100%);
+  color: var(--color-text);
+}
+.hero-bg { opacity: 0.5; }
+.hero::after {
+  background: linear-gradient(115deg, rgba(253, 251, 245, 0.95) 20%, rgba(253, 251, 245, 0.55) 60%, rgba(253, 251, 245, 0.85) 100%);
+}
+.hero-eyebrow { color: var(--gold-600); }
+.hero h1 { color: var(--navy-900); }
+.hero h1 .accent { color: var(--gold-600); }
+.hero p.lead { color: var(--navy-700); }
+.hero-badge {
+  background: rgba(255, 255, 255, 0.78);
+  border-color: rgba(201, 162, 39, 0.38);
+  color: var(--navy-700);
+}
+
+/* --- Shindan banner: light card --- */
+.shindan-banner-inner {
+  background: linear-gradient(120deg, #ffffff, var(--gold-tint));
+  border-color: rgba(201, 162, 39, 0.45);
+}
+.shindan-banner-eyebrow { color: var(--gold-600); }
+.shindan-banner-title { color: var(--navy-900); }
+
+/* --- Category hero: light --- */
+.category-hero {
+  background: linear-gradient(160deg, var(--cream-50) 0%, var(--cream-100) 100%);
+  color: var(--color-text);
+}
+.category-hero::after {
+  background: linear-gradient(115deg, rgba(253, 251, 245, 0.95) 25%, rgba(253, 251, 245, 0.62) 75%);
+}
+.category-hero h1 { color: var(--navy-900); }
+.category-hero .category-intro { color: var(--navy-700); }
+
+/* --- Closing CTA: light --- */
+.closing-cta {
+  background: linear-gradient(160deg, var(--cream-50), var(--cream-100));
+  color: var(--color-text);
+}
+.closing-cta::after {
+  background: radial-gradient(ellipse at center, rgba(253, 251, 245, 0.55) 0%, rgba(253, 251, 245, 0.93) 80%);
+}
+.closing-cta h2 { color: var(--navy-900); }
+.closing-cta p { color: var(--navy-700); }
+
+/* --- Table header: light gold --- */
+.post-content th { background: var(--gold-tint); color: var(--navy-800); }
+
+/* --- 記事上部の診断CTA: light --- */
+.post-shindan-cta {
+  background: linear-gradient(135deg, #ffffff, var(--gold-tint));
+  border-color: rgba(201, 162, 39, 0.5);
+}
+.post-shindan-cta .psc-text { color: var(--navy-700); }
+.post-shindan-cta .psc-link { color: var(--gold-600); }
+
+/* --- Floating shindan bar: white frosted pill --- */
+.floating-shindan {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(201, 162, 39, 0.55);
+  box-shadow: 0 18px 44px rgba(10, 17, 32, 0.18);
+}
+.floating-shindan-link strong { color: var(--navy-800); }
+.floating-shindan-close { color: rgba(28, 35, 51, 0.5); }
+.floating-shindan-close:hover { color: var(--navy-900); }
+
+/* --- Footer: light --- */
+.site-footer {
+  background: #ffffff;
+  color: var(--color-sub);
+  border-top: 3px solid var(--gold-500);
+}
+.footer-shindan-cta { background: var(--gold-tint); border-color: rgba(201, 162, 39, 0.45); }
+.footer-shindan-cta span { color: var(--color-sub); }
+.footer-shindan-cta strong { color: var(--gold-600); }
+.pr-footer-notice { color: var(--color-sub); }
+.footer-nav a { color: var(--navy-700); }
+.footer-nav a:hover { color: var(--gold-600); }
+.copyright { color: #9aa0ad; }
+.site-last-updated { color: var(--color-sub); }
+.site-last-updated time { color: var(--gold-600); font-weight: 700; }
