@@ -1,100 +1,34 @@
 ---
 layout: default
 main_class: home-main
-description: "マッチングアプリ・結婚相談所の選び方を行動心理学で解説する婚活情報サイト。無料の婚活タイプ診断で、自分に合った婚活方法がわかります。"
+description: "婚活サービス選びを心理学の視点で整理。無料の婚活タイプ診断と、目的別の記事から、自分に合う進め方を見つけましょう。"
 ---
-<section class="hero">
-  <div class="hero-bg" style="--hero-image: url('{{ '/assets/img/hero/hero-bg.jpg' | relative_url }}');"></div>
-  <div class="hero-inner">
-    <p class="hero-eyebrow">科学 × 心理学 × 婚活</p>
-    <h1>行動心理学でわかる、<span class="accent">後悔しない</span>婚活サービスの選び方</h1>
-    <div class="hero-divider"></div>
-    <p class="lead">マッチングアプリ・結婚相談所選びで迷ったとき、「なぜこのサービスが自分に合うのか／合わないのか」を行動心理学の視点から解説します。料金やスペックの横並び比較だけでは見えてこない、選び方の軸をお伝えします。</p>
-    <a class="hero-cta" href="#latest-articles">記事を読んでみる ↓</a>
-
-    <div class="hero-badges">
-      <div class="hero-badge"><span class="icon">🧠</span><span>行動心理学の視点で本質を見抜く</span></div>
-      <div class="hero-badge"><span class="icon">📊</span><span>データと実例でサービスを比較</span></div>
-      <div class="hero-badge"><span class="icon">🤝</span><span>中立・公平な立場で選び方をサポート</span></div>
+<div class="editorial-home">
+  <div class="home-disclosure">当サイトには広告・プロモーションが含まれます。</div>
+  <section class="editorial-hero">
+    <div class="editorial-hero-copy">
+      <p class="eyebrow">PSYCHOLOGY × PARTNERSHIP</p>
+      <h1>誰かの正解より、<br><span>あなたに合う</span><br>婚活を。</h1>
+      <p class="hero-description">迷いや焦りを、選ぶためのヒントに。<br>心理学の視点から、自分らしい婚活の進め方を<br class="desktop-break">一緒に整理していきましょう。</p>
+      <div class="hero-actions"><a class="primary-link" href="{{ '/shindan/' | relative_url }}">自分の婚活タイプを知る <span aria-hidden="true">↗</span></a><a class="text-link" href="#latest-articles">記事から探す <span aria-hidden="true">↓</span></a></div>
+      <p class="hero-caption">無料・登録不要 ／ 5つの質問・約30秒</p>
     </div>
-  </div>
-</section>
-
-<section class="shindan-banner">
-  <div class="wrap-wide shindan-banner-inner">
-    <div class="shindan-banner-text">
-      <p class="shindan-banner-eyebrow">無料 ・ 約30秒</p>
-      <p class="shindan-banner-title">あなたに合う婚活サービスは？<br class="sp-only">行動心理学タイプ診断でチェック</p>
-    </div>
-    <a class="shindan-banner-btn" href="{{ '/shindan/' | relative_url }}">無料で診断してみる →</a>
-  </div>
-</section>
-
-<nav class="quick-nav" aria-label="カテゴリーから探す">
-  <div class="wrap-wide">
-    <p class="section-heading">カテゴリーから探す</p>
-    <div class="quick-nav-grid">
-      <a class="quick-nav-card" data-cat="マッチングアプリ" href="{{ '/category/matching-app/' | relative_url }}">
-        <span class="dot">📱</span>
-        <span class="name">マッチングアプリ</span>
-        <span class="desc">選び方・評判との向き合い方</span>
-      </a>
-      <a class="quick-nav-card" data-cat="結婚相談所" href="{{ '/category/kekkon-sodanjo/' | relative_url }}">
-        <span class="dot">🏛️</span>
-        <span class="name">結婚相談所</span>
-        <span class="desc">相談所選びの心理的な軸</span>
-      </a>
-      <a class="quick-nav-card" data-cat="属性特化型婚活" href="{{ '/category/zokusei-tokka/' | relative_url }}">
-        <span class="dot">🎯</span>
-        <span class="name">属性特化型婚活</span>
-        <span class="desc">タイプ別に合うサービス</span>
-      </a>
-      <a class="quick-nav-card" data-cat="悩み・心理" href="{{ '/category/nayami-shinri/' | relative_url }}">
-        <span class="dot">💭</span>
-        <span class="name">婚活の悩み・心理</span>
-        <span class="desc">つまずきの理由を整理する</span>
-      </a>
-    </div>
-  </div>
-</nav>
-
-<div class="section-block" id="latest-articles">
-  <div class="wrap-wide">
-    <p class="section-heading">新着記事</p>
+    <figure class="editorial-hero-visual"><img src="{{ '/assets/img/hero/editorial-couple.jpg' | relative_url }}" alt="カフェで落ち着いて会話する二人のイメージ" width="1536" height="1024" fetchpriority="high"><figcaption><span>OUR POINT OF VIEW</span>出会いの数より、選び方を大切に。</figcaption></figure>
+  </section>
+  <nav class="topic-nav" aria-label="カテゴリーから探す">
+    <a href="{{ '/category/matching-app/' | relative_url }}"><span class="topic-number">01</span><strong>アプリを選ぶ</strong><span>目的・使い方から比較</span><b aria-hidden="true">↗</b></a>
+    <a href="{{ '/category/kekkon-sodanjo/' | relative_url }}"><span class="topic-number">02</span><strong>相談所を選ぶ</strong><span>料金とサポートを知る</span><b aria-hidden="true">↗</b></a>
+    <a href="{{ '/category/zokusei-tokka/' | relative_url }}"><span class="topic-number">03</span><strong>自分に合う婚活</strong><span>年齢・暮らし・価値観から</span><b aria-hidden="true">↗</b></a>
+    <a href="{{ '/category/nayami-shinri/' | relative_url }}"><span class="topic-number">04</span><strong>悩みと心理</strong><span>疲れや迷いを整理する</span><b aria-hidden="true">↗</b></a>
+  </nav>
+  <section class="editorial-articles" id="latest-articles">
+    <div class="section-title"><div><p class="eyebrow">JOURNAL</p><h2>選ぶ前に、読んでおきたいこと。</h2></div><span>婚活のヒントを、ひとつずつ。</span></div>
     <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        {% if post.image %}<a class="thumb" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ post.image | relative_url }}" alt="" loading="lazy" width="1200" height="630"></a>{% endif %}
-        <div class="post-list-body">
-          {% for cat in post.categories %}<span class="tag" data-cat="{{ cat }}">{{ cat }}</span>{% endfor %}
-          <a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <span class="date">{{ post.date | date: "%Y年%m月%d日" }}</span>
-        </div>
-      </li>
+      <li><a class="thumb" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ post.image | relative_url }}" alt="" loading="lazy" width="1200" height="630"></a><div class="post-list-body"><div>{% for cat in post.categories %}<span class="tag" data-cat="{{ cat }}">{{ cat }}</span>{% endfor %}</div><a class="title" href="{{ post.url | relative_url }}">{{ post.title }}</a><div class="article-meta"><time>{{ post.date | date: "%Y.%m.%d" }}</time><span aria-hidden="true">↗</span></div></div></li>
     {% endfor %}
     </ul>
-  </div>
+  </section>
+  <section class="editorial-diagnosis"><div><p class="eyebrow">FIND YOUR OWN WAY</p><h2>まずは、自分を知るところから。</h2><p>5つの質問で、婚活スタイルの傾向を整理。<br>あなたに合う進め方を考えるヒントが見つかります。</p></div><div><a class="primary-link" href="{{ '/shindan/' | relative_url }}">無料タイプ診断をはじめる <span aria-hidden="true">↗</span></a><p class="hero-caption">登録不要・約30秒</p></div></section>
+  <section class="editorial-about"><p class="eyebrow">ABOUT THE LAB</p><h2>納得して選ぶ、そのためのメディア。</h2><p>料金や評判だけで決める前に、「なぜ気になるのか」を考える。<br>婚活心理ラボは、心理学の視点を手がかりに、あなた自身の判断を支えます。</p><a class="text-link" href="{{ '/about/' | relative_url }}">私たちの考え方 <span aria-hidden="true">↗</span></a></section>
 </div>
-
-<section class="lifestyle-section">
-  <div class="wrap-wide">
-    <div class="lifestyle-grid">
-      <img src="{{ '/assets/img/hero/lifestyle.jpg' | relative_url }}" alt="婚活のその先にある、二人の日常のイメージ" loading="lazy" width="1672" height="941">
-      <div class="lifestyle-copy">
-        <p class="section-heading">婚活のその先にある日常</p>
-        <h2>選ぶ基準が変われば、その先の日常も変わっていきます。</h2>
-        <p>旅行の好み、暮らし方、価値観の合わせ方——婚活で見るべきなのは、スペックの一致だけではありません。行動心理学の視点は、「なんとなく合わない」の正体を言語化する手がかりになります。</p>
-        <p><a href="{{ '/about/' | relative_url }}">運営者情報・サイトの考え方はこちら →</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="closing-cta">
-  <div class="hero-bg" style="--hero-image: url('{{ '/assets/img/hero/cta-path.jpg' | relative_url }}');"></div>
-  <div class="wrap">
-    <h2>あなたに合った婚活の選び方を、<br class="sp-only">心理学の視点から。</h2>
-    <p>気になるカテゴリーの記事から、じっくり読んでみてください。</p>
-    <a class="hero-cta" href="{{ '/category/nayami-shinri/' | relative_url }}">婚活の悩み・心理を見る</a>
-  </div>
-</section>

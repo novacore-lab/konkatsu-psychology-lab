@@ -1,6 +1,6 @@
 title: 婚活心理ラボ
 description: "行動心理学でわかる、後悔しない婚活サービスの選び方"
-url: "https://consultantshuu0907-afk.github.io" # GitHub Pagesの標準URL（独自ドメイン設定後はそちらに変更）
+url: "https://novacore-lab.github.io" # GitHub Pagesの標準URL（独自ドメイン設定後はそちらに変更）
 baseurl: "/konkatsu-psychology-lab" # リポジトリ名に合わせたパス（プロジェクトページのため必須）
 lang: ja
 
@@ -44,3 +44,13 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+# 所有するGA4プロパティの測定IDを設定すると計測開始。空欄なら送信しません。
+google_analytics: ""
+
+content_updated: 2026-09-23
+
+# 実測したユニーク訪問者数のみ設定。未接続・欠測は0にせず集計準備中。
+visitor_count:
+visitor_count_since: ""
+visitor_count_as_of: ""

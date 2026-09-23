@@ -1,21 +1,14 @@
 <header class="site-header">
   <div class="wrap">
-    <a class="site-title" href="{{ '/' | relative_url }}">
-      <img class="logo-mark" src="{{ '/assets/img/hero/logo-mark.png' | relative_url }}" alt="" width="30" height="30">
-      {{ site.title }}
-    </a>
-    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <p class="site-tagline">{{ site.description }}<span class="site-updated-badge">最終更新：<time class="js-last-updated">{{ site.time | date: "%Y年%-m月%-d日" }}</time></span><img class="site-hits-badge" src="https://hits.sh/consultantshuu0907-afk.github.io/konkatsu-psychology-lab.svg?label=%E7%B4%AF%E8%A8%88PV&color=b98e2f&labelColor=141b2d" alt="このサイトの累計ページビュー数" height="20"></p>
-    <nav class="site-nav" aria-label="サイト内ナビゲーション">
-      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>トップ</a>
-      <a href="{{ '/category/matching-app/' | relative_url }}"{% if page.url contains '/category/matching-app/' %} class="active"{% endif %}>マッチングアプリ</a>
-      <a href="{{ '/category/kekkon-sodanjo/' | relative_url }}"{% if page.url contains '/category/kekkon-sodanjo/' %} class="active"{% endif %}>結婚相談所</a>
-      <a href="{{ '/category/zokusei-tokka/' | relative_url }}"{% if page.url contains '/category/zokusei-tokka/' %} class="active"{% endif %}>属性特化型婚活</a>
-      <a href="{{ '/category/nayami-shinri/' | relative_url }}"{% if page.url contains '/category/nayami-shinri/' %} class="active"{% endif %}>婚活の悩み・心理</a>
-      <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="active"{% endif %}>運営者情報</a>
-      <a class="nav-cta{% if page.url == '/shindan/' %} active{% endif %}" href="{{ '/shindan/' | relative_url }}">無料診断</a>
+    <a class="site-title" href="{{ '/' | relative_url }}"><img class="logo-mark" src="{{ '/assets/img/hero/logo-mark.png' | relative_url }}" alt="" width="38" height="38"><span>{{ site.title }}<small>KONKATSU PSYCHOLOGY LAB</small></span></a>
+    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="main-navigation" aria-label="サイト内ナビゲーション">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}>ホーム</a>
+      <a href="{{ '/category/matching-app/' | relative_url }}">アプリを選ぶ</a>
+      <a href="{{ '/category/kekkon-sodanjo/' | relative_url }}">相談所を選ぶ</a>
+      <a href="{{ '/category/zokusei-tokka/' | relative_url }}">自分に合う婚活</a>
+      <a href="{{ '/category/nayami-shinri/' | relative_url }}">悩みと心理</a>
+      <a class="nav-cta" href="{{ '/shindan/' | relative_url }}">無料タイプ診断 <span aria-hidden="true">↗</span></a>
     </nav>
   </div>
 </header>

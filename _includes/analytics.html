@@ -1,0 +1,14 @@
+{% if site.google_analytics and site.google_analytics != '' %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics | escape }}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', {{ site.google_analytics | jsonify }}, {
+  page_location: window.location.origin + window.location.pathname,
+  page_referrer: document.referrer ? document.referrer.split('?')[0].split('#')[0] : '',
+  allow_google_signals: false,
+  allow_ad_personalization_signals: false
+});
+</script>
+{% endif %}

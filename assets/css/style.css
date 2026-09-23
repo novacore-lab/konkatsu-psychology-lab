@@ -1151,3 +1151,8 @@ body.has-floating-shindan .back-to-top { bottom: 90px; }
 .copyright { color: #9aa0ad; }
 .site-last-updated { color: var(--color-sub); }
 .site-last-updated time { color: var(--gold-600); font-weight: 700; }
+
+/* A8発行原稿は変更せず、外側から既存CTAに合わせて装飾 */
+.a8-creative > a { display: inline-block; max-width: 100%; box-sizing: border-box; padding: 13px 24px; border-radius: 24px; background: linear-gradient(135deg, var(--gold-400), var(--gold-500)); color: var(--navy-900); font-weight: 700; overflow-wrap: anywhere; }
+.a8-creative > a:focus-visible { outline: 3px solid var(--navy-900); outline-offset: 4px; }
+.a8-creative > img[width="1"] { position: absolute; width: 1px; height: 1px; opacity: 0; }

@@ -1,0 +1,6 @@
+<aside class="site-status" aria-label="サイトの情報">
+  <div class="wrap site-status-inner">
+    <span>本日の日付：<time data-today-jst>—</time><noscript>JavaScriptを有効にすると表示されます</noscript></span>
+    <span>累計訪問者数：{% if site.visitor_count != nil and site.visitor_count_as_of and site.visitor_count_since %}<strong>{{ site.visitor_count }}人</strong> <small>（{{ site.visitor_count_since | escape }}〜{{ site.visitor_count_as_of | escape }}・実測）</small>{% else %}<span>集計準備中</span>{% endif %}</span>
+  </div>
+</aside>

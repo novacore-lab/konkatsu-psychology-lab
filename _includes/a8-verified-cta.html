@@ -1,0 +1,59 @@
+{% comment %}A8通常広告用テキスト原稿。2026-09-23取得。原稿内の文言・URL・計測画像を変更しない。装飾・計測属性は外側の要素に置く。{% endcomment %}
+{% case include.offer %}
+{% when 'bachelor-web' %}
+<div class="aff-cta" data-affiliate-service="bachelor-web" data-affiliate-program="s00000027012002" data-affiliate-placement="{{ include.placement | default: 'article' | escape }}">
+  <div class="aff-cta-head"><span class="aff-cta-pr">PR</span><p class="aff-cta-name">バチェラーデート</p></div>
+  {% if include.description %}<p class="aff-cta-tagline">{{ include.description | escape }}</p>{% endif %}
+  {% include verified-banner.html offer=include.offer name=include.offer %}
+<div class="a8-creative">
+<a href="https://px.a8.net/svt/ejp?a8mat=4BA7XB+757EQQ+5SFC+BX3J6" rel="nofollow">【バチェラーデート】</a>
+<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BA7XB+757EQQ+5SFC+BX3J6" alt="">
+  </div>
+  <p class="aff-cta-note">リンク先の公式サイトで、最新の料金・利用条件をご確認ください。</p>
+</div>
+{% when 'bridal-tulip' %}
+<div class="aff-cta" data-affiliate-service="bridal-tulip" data-affiliate-program="s00000014346001" data-affiliate-placement="{{ include.placement | default: 'article' | escape }}">
+  <div class="aff-cta-head"><span class="aff-cta-pr">PR</span><p class="aff-cta-name">Bridalチューリップ</p></div>
+  {% if include.description %}<p class="aff-cta-tagline">{{ include.description | escape }}</p>{% endif %}
+  {% include verified-banner.html offer=include.offer name=include.offer %}
+<div class="a8-creative">
+<a href="https://px.a8.net/svt/ejp?a8mat=4BA7XB+6Z92OY+32P0+5YJRM" rel="nofollow">結婚相談所Bridalチューリップ入会</a>
+<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BA7XB+6Z92OY+32P0+5YJRM" alt="">
+  </div>
+  <p class="aff-cta-note">リンク先の公式サイトで、最新の料金・利用条件をご確認ください。</p>
+</div>
+{% when 'bridalnet' %}
+<div class="aff-cta" data-affiliate-service="bridalnet" data-affiliate-program="s00000002032001" data-affiliate-placement="{{ include.placement | default: 'article' | escape }}">
+  <div class="aff-cta-head"><span class="aff-cta-pr">PR</span><p class="aff-cta-name">ブライダルネット</p></div>
+  {% if include.description %}<p class="aff-cta-tagline">{{ include.description | escape }}</p>{% endif %}
+  {% include verified-banner.html offer=include.offer name=include.offer %}
+<div class="a8-creative">
+<A href="https://px.a8.net/svt/ejp?a8mat=4BA7XB+6P4PEQ+FOG+62MDE" rel="nofollow">ブライダルネット</A> 
+
+<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4BA7XB+6P4PEQ+FOG+62MDE" alt="">
+  </div>
+  <p class="aff-cta-note">リンク先の公式サイトで、最新の料金・利用条件をご確認ください。</p>
+</div>
+{% when 'akanekai' %}
+<div class="aff-cta" data-affiliate-service="akanekai" data-affiliate-program="s00000016179001" data-affiliate-placement="{{ include.placement | default: 'article' | escape }}">
+  <div class="aff-cta-head"><span class="aff-cta-pr">PR</span><p class="aff-cta-name">茜会</p></div>
+  {% if include.description %}<p class="aff-cta-tagline">{{ include.description | escape }}</p>{% endif %}
+  {% include verified-banner.html offer=include.offer name=include.offer %}
+<div class="a8-creative">
+<a href="https://px.a8.net/svt/ejp?a8mat=4BA7XB+6QX082+3GU6+5YJRM" rel="nofollow">40歳以上、中高年・シニアの婚活【茜会】</a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BA7XB+6QX082+3GU6+5YJRM" alt="">
+  </div>
+  <p class="aff-cta-note">リンク先の公式サイトで、最新の料金・利用条件をご確認ください。</p>
+</div>
+{% when 'komochikon' %}
+<div class="aff-cta" data-affiliate-service="komochikon" data-affiliate-program="s00000016807009" data-affiliate-placement="{{ include.placement | default: 'article' | escape }}">
+  <div class="aff-cta-head"><span class="aff-cta-pr">PR</span><p class="aff-cta-name">子持ち婚</p></div>
+  {% if include.description %}<p class="aff-cta-tagline">{{ include.description | escape }}</p>{% endif %}
+  {% include verified-banner.html offer=include.offer name=include.offer %}
+<div class="a8-creative">
+<a href="https://px.a8.net/svt/ejp?a8mat=4BA7XB+6OJ9SY+3LOM+1HLFVM" rel="nofollow">【子持ち婚】</a>
+<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BA7XB+6OJ9SY+3LOM+1HLFVM" alt="">
+  </div>
+  <p class="aff-cta-note">リンク先の公式サイトで、最新の料金・利用条件をご確認ください。</p>
+</div>
+{% endcase %}

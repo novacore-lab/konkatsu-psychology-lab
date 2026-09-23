@@ -11,14 +11,14 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     {% assign char_count = content | strip_html | size %}
     {% assign reading_min = char_count | divided_by: 500 | plus: 1 %}
-    <p class="post-meta">{{ page.date | date: "%Y年%m月%d日" }} ・ 読了目安 約{{ reading_min }}分{% if page.psychology_principle %} ・ 心理学の視点：{{ page.psychology_principle }}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%Y年%m月%d日" }}{% if page.last_modified_at %}（更新：{{ page.last_modified_at | date: "%Y年%m月%d日" }}）{% endif %} ・ 読了目安 約{{ reading_min }}分{% if page.psychology_principle %} ・ 心理学の視点：{{ page.psychology_principle }}{% endif %}</p>
   </header>
+
+  <div class="pr-notice">{{ site.pr_notice }}</div>
 
   {% if page.image %}
   <img class="post-eyecatch" src="{{ page.image | relative_url }}" alt="{{ page.title }}" width="1200" height="630">
   {% endif %}
-
-  <div class="pr-notice">{{ site.pr_notice }}</div>
 
   <a class="post-shindan-cta" href="{{ '/shindan/' | relative_url }}">
     <span class="psc-badge">無料・約30秒</span>

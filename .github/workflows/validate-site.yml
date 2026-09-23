@@ -1,0 +1,27 @@
+name: Validate Jekyll site
+on:
+  pull_request:
+  push:
+    branches: ['codex/**']
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          future: true
+      - name: Verify generated pages
+        run: |
+          test -f _site/bridalnet-plan-guide/index.html
+          test -f _site/assets/css/editorial.css
+          test -f _site/assets/img/hero/editorial-couple.jpg
+          test -f _site/shindan/index.html
+          node --check assets/js/affiliate-tracking.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verified-jekyll-site
+          path: _site/
+          retention-days: 7
